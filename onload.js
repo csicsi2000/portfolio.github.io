@@ -13,6 +13,7 @@ window.onscroll = function() {
         document.getElementById("navbar").style.top = "0";
     } else {
         document.getElementById("navbar").style.top = "-60px";
+        $('.navbar-collapse').collapse('hide');
     }
   prevScrollpos = currentScrollPos;
 }

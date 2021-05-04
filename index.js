@@ -20,15 +20,6 @@ for(i =0; i< target.length; i++){
     observer.observe(target[i]);
 }
 
-const mainNavigation = document.querySelector(".main-navigation");
-const overlay = mainNavigation.querySelector(".overlay");
-const toggler = mainNavigation.querySelector(".navbar-toggler");
-
-const openSideNav = () => mainNavigation.classList.add("active");
-const closeSideNav = () => mainNavigation.classList.remove("active");
-
-document.addEventListener("swiped-right", openSideNav);
-document.addEventListener("swiped-left", closeSideNav);
-toggler.addEventListener("click", openSideNav);
-overlay.addEventListener("click", closeSideNav);
-
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
