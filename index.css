@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(31, 30, 30);
+    overflow-x: hidden;
+    width: 100vw;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+.bg-dark-gray{
+    background-color: rgb(29, 29, 29);
+    color: whitesmoke;
+}
+
+h2{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.cardBody{
+    flex-basis: content !important;
+}
+
+#navbar{
+    transition: 0.3s;
+}
+.navbar-collapse{
+    flex-grow: 0;
+    text-align: center;
+}
+
+.navbar-nav > li{
+    transition: 0.3s;
+}
+.nav-item{
+    margin-right: 4vw;
+}
+
+.navbar-nav > li:hover{
+    position: relative;
+    transform: scale(1.1);
+} 
+
+.icon{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    transition: 0.3s;
+    fill: black;
+}
+
+.nav-icon{
+    fill: white;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+.linkedin:hover{
+    fill: #2867B2;
+}
+
+.youtube:hover{
+    fill: #FF0000;
+}
+
+.website:hover{
+    fill:blue
+}
+
+.github:hover{
+    fill: #6e5494
+}
+
+.fadeIn{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.portrait{
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navspace{
+    padding-top: 3rem;
+}
+
+.textarea{
+    padding: 3rem; 
+}
+
+.introduction{
+    font-size: 1.3rem;
+}
+
+.animateflex > div{
+    transition: 1s;
+}
+
+.animateflex > div:nth-child(odd){
+    animation: leftSlideIn 1.5s ;
+}
+
+.home{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    min-height: 96vh;
+    text-align: center;
+}
+
+.card{
+    transition: 0.7s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.Glinks{
+    margin-top: 1rem;
+}
+
+.project{
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.fadeIn{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ProjectImages, .center{
+    padding: 0.5rem 0.5rem;
+    flex-grow: 1;
+    white-space: nowrap;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0%;
+}
+.projectImg, .centeredWSpan{
+    vertical-align: middle;
+}
+
+.centeredWSpan{
+    margin-top: 3rem;
+}
+.cardBody{
+    padding: 1em 1em;
+}
+
+@keyframes leftSlideIn{
+    0%{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animateflex > div:nth-child(even){
+    animation: rightSlideIn 1.2s ;
+}
+
+@keyframes rightSlideIn{
+    0%{
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 660px){
+    .navbar-nav > li:hover{
+        transform: scale(1.001);
+        background-color: transparent;
+    }
+
+    .navbar-toggler{
+        padding: 0;
+    }
+    .nav-item{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .navspace{
+        padding-top: 3rem;
+    }
+}
