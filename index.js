@@ -6,7 +6,6 @@ var options = {
 var count = 0;
 const callback = (entries, observer) => {
     entries.forEach((entry) => {
-        console.log(count);
       if (entry.isIntersecting) {
         entry.target.classList.add("fadeIn")
       }
@@ -17,11 +16,14 @@ const observer = new IntersectionObserver(callback, options);
 
 var target= document.querySelectorAll(".project");
 for(i =0; i< target.length; i++){
-    observer.observe(target[i]);
+  observer.observe(target[i]);
 }
 
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
+  setTimeout(() => {
+  document.getElementById("navbar").style.top = "-60px";
+} , 1000)
 });
 
 (function() {
