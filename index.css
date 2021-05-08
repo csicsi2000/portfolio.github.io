@@ -134,6 +134,10 @@ h2{
     margin-top: 1rem;
 }
 
+#Projects{
+    min-height: 100vh;
+}
+
 .project{
     opacity: 0;
     transform: translateY(300px);
