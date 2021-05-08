@@ -111,7 +111,7 @@ h2{
 }
 
 .textarea{
-    padding: 3rem; 
+    padding: 0.5rem; 
 }
 
 .introduction{
@@ -293,7 +293,7 @@ form{
         margin-bottom: 0px;
     }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 360px){
 
     .textarea{
         height: 4em;
