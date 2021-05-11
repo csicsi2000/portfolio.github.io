@@ -141,7 +141,7 @@ h2{
 .project{
     opacity: 0;
     transform: translateY(300px);
-    transition: 0.7s;
+    transition: 0.4s;
 }
 
 .fadeIn{
