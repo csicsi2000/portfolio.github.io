@@ -147,7 +147,6 @@ h2{
 }
 
 .skills{
-    padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
 
@@ -310,6 +309,9 @@ form{
     .nav-item{
         margin-right: 0px;
     }
+    .skills{
+        padding-top: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 575px){
@@ -322,7 +324,6 @@ form{
     }
 
     h2{
-        padding-bottom: 0px;
         margin-bottom: 0px;
     }
 }
