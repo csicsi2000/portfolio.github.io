@@ -132,7 +132,7 @@ h2{
 }
 
 .programmingLang *{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -148,6 +148,7 @@ h2{
 
 .skills{
     padding-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
 .card{
@@ -295,6 +296,9 @@ form{
 
     .divVW{
         width: 100vw;
+    }
+    .programmingLang *{
+        font-size: 1.2rem;
     }
 }
 @media only screen and (max-width: 660px){
