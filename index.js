@@ -19,12 +19,26 @@ for(i =0; i< target.length; i++){
   observer.observe(target[i]);
 }
 
-$('.navbar-nav>li>a').on('click', function(){
+$('.navbar-nav>li>a, .btn').on('click', function(){
   $('.navbar-collapse').collapse('hide');
   setTimeout(() => {
+    document.getElementById("navbar").style.top = "0px";
+  } , 1000)
+    /*
+  setTimeout(() => {
   document.getElementById("navbar").style.top = "-60px";
-} , 1000)
+  } , 1000)
+  */
 });
+
+var navHeight =  document.getElementById("navbar").clientHeight * 1.2;
+console.log(navHeight);
+
+var firstItem =  document.getElementsByTagName('h2');
+for (var i = 0, ii = firstItem.length; i < ii; i++) {
+  firstItem[i].style.paddingTop = navHeight;
+  console.log(firstItem[i].style.paddingTop);
+};
 
 (function() {
   'use strict';

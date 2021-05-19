@@ -29,6 +29,7 @@ p{
 
 h2{
     padding: 2rem;
+    padding-top: 5rem;
     text-align: center;
     font-size: 3rem;
 }
@@ -290,6 +291,7 @@ form{
         font-size: 1.3rem;
         margin-top: 2rem;
     }
+
     h2{
         font-size: 2rem;
     }
@@ -340,5 +342,34 @@ form{
     .form-label{
         margin-top: 0.2rem;
         margin-bottom: 0.2rem;
+    }
+}
+
+@media only screen and (orientation: landscape)and (max-width: 800px) {
+    .navlist{
+        display: flex;
+        flex-direction: row;
+        max-height: 80vh;
+    }
+
+    .navlist > *{
+        flex-basis: 50vw;
+        text-align: center;
+        margin-left: auto;
+        flex-grow: 1;
+        display: flex;
+        width: 100%;
+    }
+
+    .text-center > a{
+        margin: auto;
+    }
+
+    .nav-item:not(:nth-child(1)){
+        margin-top: 0;
+    }
+
+    .btn{
+        height: 4rem;
     }
 }
