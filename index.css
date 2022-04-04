@@ -5,6 +5,7 @@ html{
     background-color: rgb(31, 30, 30);
     overflow-x: hidden;
 }
+
 body{
     min-height: 100vh;
     width: 100vw;
@@ -124,25 +125,11 @@ h2{
     transition: 1s;
 }
 
-#About{
-    background-color: rgb(255, 255, 255);
-    vertical-align: middle;
-}
-
-.Vcenter{
-    margin: auto;
-}
 
 .programmingLang *{
     font-size: 1.5rem;
     font-weight: 500;
 }
-
-/*
-.fit-parent{
-    width: 90%;
-}
-*/
 
 .aboutText{
     height: fit-content;
@@ -162,6 +149,10 @@ h2{
 
 .Glinks{
     margin-top: 1rem;
+}
+
+dl.inside{
+    padding-left: 2rem;
 }
 
 #Projects{
@@ -184,14 +175,17 @@ h2{
     flex-grow: 1;
     white-space: nowrap;
 }
+
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
+
 .projectImg{
     vertical-align: middle;
 }
+
 .cardBody{
     padding: 1em 1em;
 }
@@ -215,8 +209,8 @@ h2{
 .projectHr{
     margin: auto;
     width: 50%;
-    border-color: black !important;
-    background-color: black !important;
+    border-color: black;
+    background-color: black;
     height: 2px !important;
     margin-bottom: 1rem ;
 }

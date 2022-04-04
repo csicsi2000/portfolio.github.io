@@ -38,17 +38,20 @@
                                 <a class="nav-link" href="#About">About</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#Experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#Projects" >Projects</a>
                             </li>
                         </ul>
                         <div class="text-center">
-                                <button class="btn btn-outline-success" type="button" onclick="location.href='#formDiv'">Contact Me</button>
+                            <button class="btn btn-outline-success" type="button" onclick="location.href='#formDiv'">Contact Me</button>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <div class="d-flex row bg-dark-gray animateflex home g-0 justify-content-center min-vh-100">
+        <section class="d-flex row bg-dark-gray animateflex home g-0 justify-content-center min-vh-100">
             <div class="col-md-6 text-center align-self-center p-0">
                 <img src="images/Zheng_Yuan_Qi.jpg" class="img-fluid portrait align-self-center" alt="Picture of me">
             </div>
@@ -59,12 +62,11 @@
                     I like to learn new things, and face challenges.
                 </p>
             </div>
-        </div>
+        </section>
         
-        <div id="About" class="d-flex home g-0 min-vh-100">
-            <div class="Vcenter">
+        <section id="About" class="d-flex home g-0 min-vh-100">
+            <div class="m-auto">
             <h2 class="firstItem">About</h2>
-            
             <hr class="projectHr">
             <div class="d-flex row aboutText animateflex p-5">
                 <div class="col-md-6 col-sm-12 p-0 align-self-center text-center">
@@ -75,25 +77,46 @@
                     <h3 class="skills">Skills</h3>
                     <div class=" programmingLang d-flex row">
                         <div class="col-6">
+                            <p>C#</p>
                             <p>HTML</p>
                             <p>CSS</p>
+                            <p>JavaScript</p>
                             <p>Bootstrap</p>
                         </div>
                         <div class="col-6">   
-                            <p>JavaScript</p>
-                            <p>C#</p>
+                            <p>Git</p>
+                            <p>TFS</p>
+                            <p>MSTest</p>
+                            <p>Agile</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-    
-        <div id="Projects">
+            </div>
+        </section>
+        <section id="Work Experience" class="d-flex home g-0 min-vh-100 vw-100 bg-dark-gray">
+            <div class="m-auto">
+                <h2 class="firstItem">EXPERIENCE</h2>
+                <hr class="projectHr bg-light">
+                <ul class="p-5">
+                    <li>
+                        <p class="h3">2021 - Evosoft</p>
+                        <dl class="inside">
+                            <dt>Openness Explorer</dt>
+                            <dd>C# application using Openness Api to access methods and properties of the application.<br>
+                                <a class="link-info" href="https://support.industry.siemens.com/cs/document/109760816/tia-openness-explorer?dti=0&lc=en-WW">Link to the tool</a></dd>
+                            <dt>MTP Accelerator</dt>
+                            <dd>Export tool for exporting MTP file from TIA Portal.</dd>
+                            <dt>MTP Creator</dt>
+                            <dd>Export tool/add-in for exporting MTP based on NAMUR standard.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="Projects">
             <h2 class="firstItem">PROJECTS</h2>
-            
             <hr class="projectHr">
-            
             <div class="d-flex row p-md-5 justify-content-sm-center justify-content-md-around vw-100 g-0">
                 <div class="project card col-xl-3 col-md-5 col-sm-10 p-md-2 p-0 shadow m-lg-3 m-md-2 m-sm-1 g-0 corner">
                     <div class="ProjectImages">
@@ -215,8 +238,8 @@
                 </div>
                 -->
             </div>
-        </div>
-        <div class="formDiv d-flex justify-content-center min-vh-100" id="formDiv">
+        </section>
+        <section class="formDiv d-flex justify-content-center min-vh-100" id="formDiv">
             <div class="align-self-center divVW">
                 <h2 class="text-light">CONTACT ME</h2>
                 <form class="needs-validation" action="https://formsubmit.co/8d9533f2d135237f6e6d7e4a4a4e4f67" method="POST" novalidate>
@@ -265,7 +288,7 @@
                     </div>        
                 </form>
             </div>
-        </div>
+        </section>
         <script src="bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.js"></script>
         <script src="index.js"></script>
     </body>
